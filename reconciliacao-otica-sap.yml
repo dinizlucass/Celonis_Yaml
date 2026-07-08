@@ -1,0 +1,606 @@
+asides:
+- id: aside-sap
+  grid:
+    mode: scrollable
+    height: 1200
+    elements:
+    - id: ae1
+      position:
+        width: 1
+        height: 3
+        positionX: 1
+        positionY: 1
+      componentId: aside-title
+    - id: ae2
+      position:
+        width: 1
+        height: 5
+        positionX: 1
+        positionY: 4
+      componentId: f-comp
+    - id: ae3
+      position:
+        width: 1
+        height: 5
+        positionX: 1
+        positionY: 9
+      componentId: f-cod
+    - id: ae4
+      position:
+        width: 1
+        height: 5
+        positionX: 1
+        positionY: 14
+      componentId: f-moeda
+    - id: ae5
+      position:
+        width: 1
+        height: 5
+        positionX: 1
+        positionY: 19
+      componentId: f-data
+  active: true
+  components:
+  - id: aside-title
+    type: text-box
+    filters: []
+    settings:
+      content: <h3><strong>Filtros</strong></h3>
+  - id: f-comp
+    type: filter-dropdown
+    filters: []
+    settings:
+      attribute: fd-comp.fa-comp
+      dataSources:
+      - id: fd-comp
+        attributes:
+        - id: fa-comp
+          pql: '"o_custom_DetalhamentoFaturasMetra"."Competencia"'
+          columnType: string
+          aggregation: false
+          referencedEntity:
+            id: O_CUSTOM_DETALHAMENTOFATURASMETRA.COMPETENCIA
+            type: NATIVE_ATTRIBUTE
+            columnType: string
+          shortDisplayName: ''
+          hasKnowledgeSyncDisplayChanges: true
+        displayName: fd-comp
+        shortDisplayName: ''
+      displayName: Competência
+  - id: f-cod
+    type: filter-dropdown
+    filters: []
+    settings:
+      attribute: fd-cod.fa-cod
+      dataSources:
+      - id: fd-cod
+        attributes:
+        - id: fa-cod
+          pql: '"o_celonis_SalesOrder"."custom_ClienteMetra"'
+          columnType: string
+          aggregation: false
+          referencedEntity:
+            id: O_CELONIS_SALESORDER.CUSTOM_CLIENTEMETRA
+            type: NATIVE_ATTRIBUTE
+            columnType: string
+          shortDisplayName: ''
+          hasKnowledgeSyncDisplayChanges: true
+        displayName: fd-cod
+        shortDisplayName: ''
+      displayName: CodPagador
+  - id: f-moeda
+    type: filter-dropdown
+    filters: []
+    settings:
+      attribute: fd-moeda.fa-moeda
+      dataSources:
+      - id: fd-moeda
+        attributes:
+        - id: fa-moeda
+          pql: '"o_custom_DetalhamentoFaturasMetra"."MoedaFaturamento"'
+          columnType: string
+          aggregation: false
+          referencedEntity:
+            id: O_CUSTOM_DETALHAMENTOFATURASMETRA.MOEDAFATURAMENTO
+            type: NATIVE_ATTRIBUTE
+            columnType: string
+          shortDisplayName: ''
+          hasKnowledgeSyncDisplayChanges: true
+        displayName: fd-moeda
+        shortDisplayName: ''
+      displayName: Moeda
+  - id: f-data
+    type: date-range
+    filters: []
+    settings:
+      label: Data de Faturamento
+      dataSources:
+      - id: fd-data
+        attributes:
+        - id: fa-data
+          pql: '"o_celonis_CustomerInvoiceItem"."custom_BillingDate"'
+          columnType: date
+          aggregation: false
+          referencedEntity:
+            id: O_CELONIS_CUSTOMERINVOICEITEM.CUSTOM_BILLINGDATE
+            type: NATIVE_ATTRIBUTE
+            columnType: date
+          shortDisplayName: ''
+          hasKnowledgeSyncDisplayChanges: true
+        displayName: fd-data
+        shortDisplayName: ''
+      dateAttribute: fd-data.fa-data
+metadata:
+  key: reconsapview
+  name: Reconciliação — Ótica SAP
+  showCaseCount: true
+  knowledgeModelKey: dm_perspective_custom_accountsreceivableextendedmetraportal-km
+  allowAICapabilities: true
+  allowAdvancedFilters: true
+  allowScheduledReports: true
+  advancedFiltersSettings:
+    eventLogs: []
+    processFilter:
+      active: true
+    attributeFilter:
+      active: true
+tabs:
+- id: tab-sap
+  grid:
+    mode: full-height
+    elements:
+    - id: text-box-sap-intro-el
+      position:
+        width: 36
+        height: 4
+        positionX: 1
+        positionY: 1
+      componentId: text-box-sap-intro
+    - id: kpi-list-sap-el
+      position:
+        width: 36
+        height: 6
+        positionX: 1
+        positionY: 5
+      componentId: kpi-list-sap
+    - id: cols-sap-metra-comp-el
+      position:
+        width: 24
+        height: 24
+        positionX: 1
+        positionY: 11
+      componentId: cols-sap-metra-comp
+    - id: pie-status-sap-el
+      position:
+        width: 12
+        height: 24
+        positionX: 25
+        positionY: 11
+      componentId: pie-status-sap
+    - id: table-sap-principal-el
+      position:
+        width: 36
+        height: 30
+        positionX: 1
+        positionY: 35
+      componentId: table-sap-principal
+    - id: table-sap-sem-metra-el
+      position:
+        width: 36
+        height: 26
+        positionX: 1
+        positionY: 65
+      componentId: table-sap-sem-metra
+  name: Ótica SAP
+  asides:
+  - active: true
+    asideId: aside-sap
+  visible: true
+  components:
+  - id: text-box-sap-intro
+    type: text-box
+    filters: []
+    settings:
+      content: '<h2><strong>Reconciliação pela ótica do SAP</strong></h2><p>Do que o SAP faturou: o que casa com o Metranet, o que diverge e o que o SAP faturou sem origem no Metra.</p>'
+  - id: kpi-list-sap
+    type: kpi-list
+    filters: []
+    settings:
+      data:
+        kpis:
+        - id: kk1
+          kpi: ds-k-sapval.a-sapval
+          show: true
+          order: 100
+        - id: kk2
+          kpi: ds-k-metra.a-metra
+          show: true
+          order: 200
+        - id: kk3
+          kpi: ds-k-gap.a-gap
+          show: true
+          order: 300
+        - id: kk4
+          kpi: ds-k-nfat.a-nfat
+          show: true
+          order: 400
+        - id: kk5
+          kpi: ds-k-nord.a-nord
+          show: true
+          order: 500
+        - id: kk6
+          kpi: ds-k-pct.a-pct
+          show: true
+          order: 600
+      dataSources:
+      - id: ds-k-sapval
+        filters: []
+        attributes:
+        - id: a-sapval
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."NetAmount"), 0))
+          unit: ''
+          format: ',.3~s'
+          columnType: float
+          aggregation: true
+          displayName: SAP — Valor Faturado
+          shortDisplayName: ''
+        displayName: ds-k-sapval
+        shortDisplayName: ''
+      - id: ds-k-metra
+        filters: []
+        attributes:
+        - id: a-metra
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.3~s'
+          columnType: float
+          aggregation: true
+          displayName: Metra — Valor Correspondente
+          shortDisplayName: ''
+        displayName: ds-k-metra
+        shortDisplayName: ''
+      - id: ds-k-gap
+        filters: []
+        attributes:
+        - id: a-gap
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."NetAmount"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.3~s'
+          columnType: float
+          aggregation: true
+          displayName: Gap (SAP − Metra)
+          shortDisplayName: ''
+        displayName: ds-k-gap
+        shortDisplayName: ''
+      - id: ds-k-nfat
+        filters: []
+        attributes:
+        - id: a-nfat
+          pql: SUM(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0))
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Nº de Faturas SAP
+          shortDisplayName: ''
+        displayName: ds-k-nfat
+        shortDisplayName: ''
+      - id: ds-k-nord
+        filters: []
+        attributes:
+        - id: a-nord
+          pql: COUNT("o_celonis_SalesOrder"."ID")
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Nº de Ordens
+          shortDisplayName: ''
+        displayName: ds-k-nord
+        shortDisplayName: ''
+      - id: ds-k-pct
+        filters: []
+        attributes:
+        - id: a-pct
+          pql: (SUM(CASE WHEN NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0) AND ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."NetAmount"), 0)) - (COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))) <= 1 THEN 1 ELSE 0 END)) / CASE WHEN COUNT("o_celonis_SalesOrder"."ID") = 0 THEN NULL ELSE COUNT("o_celonis_SalesOrder"."ID") END
+          unit: ''
+          format: .1%
+          columnType: float
+          aggregation: true
+          displayName: '% Ordens Conciliadas'
+          shortDisplayName: ''
+        displayName: ds-k-pct
+        shortDisplayName: ''
+  - id: cols-sap-metra-comp
+    type: columns-line-chart
+    filters: []
+    settings:
+      name: SAP × Metra × Gap por Competência
+      visuals:
+      - id: v1
+        mark:
+          type: bar
+          color: PRIMARY_40
+          orientation: vertical
+        order: 100
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - a-comp
+          y:
+            axis:
+              hide: false
+              position: left
+            field: a-c-sap
+      - id: v2
+        mark:
+          type: bar
+          color: CONTEXT_70
+          orientation: vertical
+        order: 200
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - a-comp
+          y:
+            axis:
+              hide: false
+              position: left
+            field: a-c-met
+      - id: v3
+        mark:
+          type: line
+          color: HIGHLIGHT_40
+          orientation: vertical
+        order: 300
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - a-comp
+          y:
+            axis:
+              hide: false
+              position: right
+            field: a-c-gap
+      dataSources:
+      - id: ds-comp
+        filters: []
+        attributes:
+        - id: a-comp
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."Competencia")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Competência
+          shortDisplayName: ''
+        - id: a-c-sap
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."NetAmount"), 0))
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Valor SAP
+          shortDisplayName: ''
+        - id: a-c-met
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Valor Metra
+          shortDisplayName: ''
+        - id: a-c-gap
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."NetAmount"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Gap
+          shortDisplayName: ''
+        displayName: ds-comp
+        shortDisplayName: ''
+  - id: pie-status-sap
+    type: pie-chart
+    filters: []
+    settings:
+      kpi: a-p-val
+      name: Valor SAP por Status
+      category:
+      - a-p-cat
+      dataSources:
+      - id: ds-pie
+        filters: []
+        attributes:
+        - id: a-p-cat
+          pql: CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN 'Sem fatura SAP' WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ID"), 0) = 0 THEN 'SAP sem Metra' WHEN ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."NetAmount"), 0)) - (COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))) <= 1 THEN 'Correto' ELSE 'Divergente' END
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Status
+          shortDisplayName: ''
+        - id: a-p-val
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."NetAmount"), 0))
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Valor SAP
+          shortDisplayName: ''
+        displayName: ds-pie
+        shortDisplayName: ''
+      additionalKpis: []
+      colorRuleField: a-p-cat
+  - id: table-sap-principal
+    type: table
+    filters: []
+    settings:
+      data:
+        columns:
+        - id: c1
+          field: a-t-fat
+          order: 100
+        - id: c2
+          field: a-t-numdoc
+          order: 200
+        - id: c3
+          field: a-t-ov
+          order: 300
+        - id: c4
+          field: a-t-cli
+          order: 400
+        - id: c5
+          field: a-t-sap
+          order: 500
+        - id: c6
+          field: a-t-met
+          order: 600
+        - id: c7
+          field: a-t-delta
+          order: 700
+        - id: c8
+          field: a-t-status
+          order: 800
+          visualMapping:
+            rule: CONTEXT
+            colorStyle: background
+      dataSources:
+      - id: ds-tbl
+        pql: '"o_celonis_SalesOrder"."custom_CustomerPurchaseOrder"'
+        filters: []
+        attributes:
+        - id: a-t-fat
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."SystemCustomerInvoiceNumber")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Fatura SAP
+          shortDisplayName: ''
+        - id: a-t-numdoc
+          pql: '"o_celonis_SalesOrder"."custom_MetraNumDoc"'
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: NumDoc
+          shortDisplayName: ''
+        - id: a-t-ov
+          pql: '"o_celonis_SalesOrder"."custom_CustomerPurchaseOrder"'
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Ordem de Venda
+          shortDisplayName: ''
+        - id: a-t-cli
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."NomeCompleto")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Cliente
+          shortDisplayName: ''
+        - id: a-t-sap
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."NetAmount"), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Valor SAP
+          shortDisplayName: ''
+        - id: a-t-met
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Valor Metra
+          shortDisplayName: ''
+        - id: a-t-delta
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."NetAmount"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Delta (SAP−Metra)
+          shortDisplayName: ''
+        - id: a-t-status
+          pql: CASE WHEN SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN 1 ELSE 0 END) = COUNT("o_celonis_SalesOrder"."ID") THEN 'Sem fatura SAP' WHEN SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ID"), 0) = 0 THEN 1 ELSE 0 END) = COUNT("o_celonis_SalesOrder"."ID") THEN 'SAP sem Metra' WHEN ABS(SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."NetAmount"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))) <= 1 THEN 'Correto' ELSE 'Divergente' END
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: true
+          displayName: Status
+          shortDisplayName: ''
+        displayName: ds-tbl
+        shortDisplayName: ''
+  - id: table-sap-sem-metra
+    type: table
+    filters: []
+    settings:
+      data:
+        columns:
+        - id: d1
+          field: a-s-fat
+          order: 100
+        - id: d2
+          field: a-s-numdoc
+          order: 200
+        - id: d3
+          field: a-s-ov
+          order: 300
+        - id: d4
+          field: a-s-sap
+          order: 400
+      dataSources:
+      - id: ds-tbl2
+        pql: '"o_celonis_SalesOrder"."custom_CustomerPurchaseOrder"'
+        filters:
+        - pql: FILTER COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ID"), 0) = 0 AND NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0);
+          isReferenced: false
+        attributes:
+        - id: a-s-fat
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."SystemCustomerInvoiceNumber")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Fatura SAP
+          shortDisplayName: ''
+        - id: a-s-numdoc
+          pql: '"o_celonis_SalesOrder"."custom_MetraNumDoc"'
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: NumDoc
+          shortDisplayName: ''
+        - id: a-s-ov
+          pql: '"o_celonis_SalesOrder"."custom_CustomerPurchaseOrder"'
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Ordem de Venda
+          shortDisplayName: ''
+        - id: a-s-sap
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."NetAmount"), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Valor SAP
+          shortDisplayName: ''
+        displayName: ds-tbl2
+        shortDisplayName: ''
