@@ -1,0 +1,2288 @@
+asides:
+- id: 6ae8cd44-8841-4ddd-b267-67b28ff47175
+  grid:
+    mode: scrollable
+    height: 1200
+    elements:
+    - id: bef708c0-4580-4614-927a-141ad9a79441
+      position:
+        width: 1
+        height: 3
+        positionX: 1
+        positionY: 1
+      componentId: text-box-a838f2e8-9fb8-4c96-8443-02c1939bc5ce
+    - id: b1aeb1b6-5544-4375-b18f-e11e8c6eff26
+      position:
+        width: 1
+        height: 5
+        positionX: 1
+        positionY: 4
+      componentId: filter-dropdown-05fd0224-2131-4291-b84e-25269e3daa8c
+    - id: d5358cc5-0971-4ca1-b920-454ac21cffa7
+      position:
+        width: 1
+        height: 5
+        positionX: 1
+        positionY: 9
+      componentId: filter-dropdown-abd7b220-d71b-4c25-b9fd-8c37b85c420c
+    - id: e7594898-54e2-45e0-8d4e-0d1175236ff7
+      position:
+        width: 1
+        height: 5
+        positionX: 1
+        positionY: 14
+      componentId: filter-dropdown-6ae8aafd-58e9-4f6b-9f34-ca8497fdc55d
+    - id: 01d0a6e1-2c98-4bf4-a1cf-5e6273371280
+      position:
+        width: 1
+        height: 5
+        positionX: 1
+        positionY: 19
+      componentId: filter-dropdown-7dfa2b17-e480-4333-a35e-b9cc20cc9a95
+    - id: 4ec96a55-cff3-44a8-b6ef-4fe9bfca1ec4
+      position:
+        width: 1
+        height: 5
+        positionX: 1
+        positionY: 24
+      componentId: filter-dropdown-215984b6-d09c-4c32-9ec2-47d07a267adc
+    - id: 2574c4e6-48dc-41a5-bd70-fa23b910d312
+      position:
+        width: 1
+        height: 5
+        positionX: 1
+        positionY: 29
+      componentId: filter-dropdown-70867dab-6908-400a-8e91-a09dda1509b0
+    - id: c3174ac7-ab76-4bb8-a918-813f2a270203
+      position:
+        width: 1
+        height: 5
+        positionX: 1
+        positionY: 34
+      componentId: filter-dropdown-998b8904-ea27-472a-afaf-f82e91de0061
+    - id: 1498e234-03f3-4d3b-b8be-50666a5732b0
+      position:
+        width: 1
+        height: 5
+        positionX: 1
+        positionY: 39
+      componentId: filter-dropdown-e3b2b980-29e4-4b13-8531-606e002e5e11
+    - id: 5d48be0b-76ba-4066-a7ba-6ac44551a8ca
+      position:
+        width: 1
+        height: 5
+        positionX: 1
+        positionY: 45
+      componentId: date-range-dea8973e-ec32-41e9-a132-fcbf073e77aa
+  active: true
+  components:
+  - id: text-box-a838f2e8-9fb8-4c96-8443-02c1939bc5ce
+    type: text-box
+    filters: []
+    settings:
+      content: <h3><strong>Filtros Globais</strong></h3>
+  - id: filter-dropdown-05fd0224-2131-4291-b84e-25269e3daa8c
+    type: filter-dropdown
+    filters: []
+    settings:
+      attribute: f2cffa43-076b-42c1-8148-0393a2a21214.550c6291-cfb6-4993-a2da-9be956485b9d
+      dataSources:
+      - id: f2cffa43-076b-42c1-8148-0393a2a21214
+        pql: '"o_custom_DetalhamentoFaturasMetra"."Competencia"'
+        filters: []
+        attributes:
+        - id: 550c6291-cfb6-4993-a2da-9be956485b9d
+          pql: '"o_custom_DetalhamentoFaturasMetra"."Competencia"'
+          columnType: string
+          aggregation: false
+          displayName: Competência
+          referencedEntity:
+            id: O_CUSTOM_DETALHAMENTOFATURASMETRA.COMPETENCIA
+            type: NATIVE_ATTRIBUTE
+        displayName: Competência
+        shortDisplayName: ''
+  - id: filter-dropdown-abd7b220-d71b-4c25-b9fd-8c37b85c420c
+    type: filter-dropdown
+    filters: []
+    settings:
+      attribute: fe155775-616b-4c22-a1df-6cb36ebb615e.36e6ede7-85ab-493f-ae10-a8a671c2b88c
+      dataSources:
+      - id: fe155775-616b-4c22-a1df-6cb36ebb615e
+        attributes:
+        - id: 36e6ede7-85ab-493f-ae10-a8a671c2b88c
+          pql: '"o_celonis_SalesOrder"."custom_ClienteMetra"'
+          columnType: string
+          aggregation: false
+          referencedEntity:
+            id: O_CELONIS_SALESORDER.CUSTOM_CLIENTEMETRA
+            type: NATIVE_ATTRIBUTE
+            columnType: string
+          shortDisplayName: ''
+          hasKnowledgeSyncDisplayChanges: true
+        displayName: fe155775-616b-4c22-a1df-6cb36ebb615e
+        shortDisplayName: ''
+      displayName: CodPagador
+  - id: filter-dropdown-6ae8aafd-58e9-4f6b-9f34-ca8497fdc55d
+    type: filter-dropdown
+    filters: []
+    settings:
+      attribute: bd4ff98b-d426-408f-a92e-ca4d1766a24d.b932e484-a12e-4ba4-a5d2-555e11df4374
+      dataSources:
+      - id: bd4ff98b-d426-408f-a92e-ca4d1766a24d
+        pql: '"o_custom_DetalhamentoFaturasMetra"."PRODUTO"'
+        filters: []
+        attributes:
+        - id: b932e484-a12e-4ba4-a5d2-555e11df4374
+          pql: '"o_custom_DetalhamentoFaturasMetra"."PRODUTO"'
+          columnType: string
+          aggregation: false
+          displayName: Produto
+          referencedEntity:
+            id: O_CUSTOM_DETALHAMENTOFATURASMETRA.PRODUTO
+            type: NATIVE_ATTRIBUTE
+        displayName: Produto
+        shortDisplayName: ''
+  - id: filter-dropdown-7dfa2b17-e480-4333-a35e-b9cc20cc9a95
+    type: filter-dropdown
+    filters: []
+    settings:
+      attribute: f9394285-b470-4a70-a28a-24e4aa9b6eaf.d962b969-694c-4eef-bc1b-6b163eec0764
+      dataSources:
+      - id: f9394285-b470-4a70-a28a-24e4aa9b6eaf
+        pql: '"o_custom_DetalhamentoFaturasMetra"."GrupoServico"'
+        filters: []
+        attributes:
+        - id: d962b969-694c-4eef-bc1b-6b163eec0764
+          pql: '"o_custom_DetalhamentoFaturasMetra"."GrupoServico"'
+          columnType: string
+          aggregation: false
+          displayName: Grupo de Serviço
+          referencedEntity:
+            id: O_CUSTOM_DETALHAMENTOFATURASMETRA.GRUPOSERVICO
+            type: NATIVE_ATTRIBUTE
+        displayName: Grupo de Serviço
+        shortDisplayName: ''
+  - id: filter-dropdown-215984b6-d09c-4c32-9ec2-47d07a267adc
+    type: filter-dropdown
+    filters: []
+    settings:
+      attribute: a1063e11-401a-4f64-9bef-321b7de593db.cbd0f194-683f-41c9-8662-193633c83ecb
+      dataSources:
+      - id: a1063e11-401a-4f64-9bef-321b7de593db
+        pql: '"o_custom_DetalhamentoFaturasMetra"."FILIAL"'
+        filters: []
+        attributes:
+        - id: cbd0f194-683f-41c9-8662-193633c83ecb
+          pql: '"o_custom_DetalhamentoFaturasMetra"."FILIAL"'
+          columnType: string
+          aggregation: false
+          displayName: Filial
+          referencedEntity:
+            id: O_CUSTOM_DETALHAMENTOFATURASMETRA.FILIAL
+            type: NATIVE_ATTRIBUTE
+        displayName: Filial
+        shortDisplayName: ''
+  - id: filter-dropdown-70867dab-6908-400a-8e91-a09dda1509b0
+    type: filter-dropdown
+    filters: []
+    settings:
+      attribute: 7c70023f-b0dc-4147-9d3e-f6122903fbe1.1029f375-f317-46ff-8330-2f5f0c2cb4a5
+      dataSources:
+      - id: 7c70023f-b0dc-4147-9d3e-f6122903fbe1
+        pql: '"o_custom_DetalhamentoFaturasMetra"."TipoServico"'
+        filters: []
+        attributes:
+        - id: 1029f375-f317-46ff-8330-2f5f0c2cb4a5
+          pql: '"o_custom_DetalhamentoFaturasMetra"."TipoServico"'
+          columnType: string
+          aggregation: false
+          displayName: Tipo de Serviço
+          referencedEntity:
+            id: O_CUSTOM_DETALHAMENTOFATURASMETRA.TIPOSERVICO
+            type: NATIVE_ATTRIBUTE
+        displayName: Tipo de Serviço
+        shortDisplayName: ''
+  - id: filter-dropdown-998b8904-ea27-472a-afaf-f82e91de0061
+    type: filter-dropdown
+    filters: []
+    settings:
+      attribute: 9564f078-48a0-46ad-82cf-25e0ad718ad7.d07c44cd-48b0-49ae-8077-e343f5e8a50a
+      dataSources:
+      - id: 9564f078-48a0-46ad-82cf-25e0ad718ad7
+        pql: '"o_custom_DetalhamentoFaturasMetra"."CategoriaCliente"'
+        filters: []
+        attributes:
+        - id: d07c44cd-48b0-49ae-8077-e343f5e8a50a
+          pql: '"o_custom_DetalhamentoFaturasMetra"."CategoriaCliente"'
+          columnType: string
+          aggregation: false
+          displayName: Categoria do Cliente
+          referencedEntity:
+            id: O_CUSTOM_DETALHAMENTOFATURASMETRA.CATEGORIACLIENTE
+            type: NATIVE_ATTRIBUTE
+        displayName: Categoria do Cliente
+        shortDisplayName: ''
+  - id: filter-dropdown-e3b2b980-29e4-4b13-8531-606e002e5e11
+    type: filter-dropdown
+    filters: []
+    settings:
+      attribute: 91630571-7594-4acf-9c53-4489e45c780f.eb617a4f-4714-4150-ad33-c29d4d2c5158
+      dataSources:
+      - id: 91630571-7594-4acf-9c53-4489e45c780f
+        pql: '"o_custom_DetalhamentoFaturasMetra"."MoedaFaturamento"'
+        filters: []
+        attributes:
+        - id: eb617a4f-4714-4150-ad33-c29d4d2c5158
+          pql: '"o_custom_DetalhamentoFaturasMetra"."MoedaFaturamento"'
+          columnType: string
+          aggregation: false
+          displayName: Moeda
+          referencedEntity:
+            id: O_CUSTOM_DETALHAMENTOFATURASMETRA.MOEDAFATURAMENTO
+            type: NATIVE_ATTRIBUTE
+        displayName: Moeda
+        shortDisplayName: ''
+  - id: date-range-dea8973e-ec32-41e9-a132-fcbf073e77aa
+    type: date-range
+    filters: []
+    settings:
+      label: Data de Faturamento
+      dataSources:
+      - id: fbfec6f5-e287-4169-96c3-d24575894615
+        attributes:
+        - id: 023a2c7a-0e74-4af5-8a50-5074305c3cc4
+          pql: '"o_celonis_CustomerInvoiceItem"."custom_BillingDate"'
+          columnType: date
+          aggregation: false
+          referencedEntity:
+            id: O_CELONIS_CUSTOMERINVOICEITEM.CUSTOM_BILLINGDATE
+            type: NATIVE_ATTRIBUTE
+            columnType: date
+          shortDisplayName: ''
+          hasKnowledgeSyncDisplayChanges: true
+        displayName: fbfec6f5-e287-4169-96c3-d24575894615
+        shortDisplayName: ''
+      dateAttribute: fbfec6f5-e287-4169-96c3-d24575894615.023a2c7a-0e74-4af5-8a50-5074305c3cc4
+metadata:
+  key: reconmetrasapfull
+  name: Reconciliação Metranet × SAP — Cockpit Operacional
+  showCaseCount: true
+  knowledgeModelKey: dm_perspective_custom_accountsreceivableextendedmetraportal-km
+  allowAICapabilities: true
+  allowAdvancedFilters: true
+  allowScheduledReports: true
+  advancedFiltersSettings:
+    eventLogs: []
+    processFilter:
+      active: true
+    attributeFilter:
+      active: true
+tabs:
+- id: 4b9b4726-5667-4934-bc5e-3ea955b6b61b
+  grid:
+    mode: full-height
+    elements:
+    - id: 6a8ff703-612a-415c-85f6-7356004fda79
+      position:
+        width: 36
+        height: 4
+        positionX: 1
+        positionY: 1
+      componentId: text-box-b915140a-ea1f-40ab-be7e-ba62206952dd
+    - id: 07ad7251-b372-443e-bded-ff3800f8967b
+      position:
+        width: 36
+        height: 6
+        positionX: 1
+        positionY: 5
+      componentId: kpi-list-9785ba3f-75ed-4bf1-9d8a-fa2fdb83e5d4
+    - id: 43e924c7-5db5-40b0-b8ab-949e82cf5a4d
+      position:
+        width: 12
+        height: 26
+        positionX: 1
+        positionY: 11
+      componentId: pie-chart-27130075-b286-4764-b721-5d346269fdad
+    - id: 1aaf8cb8-fff6-41e3-aeda-14e14b84035e
+      position:
+        width: 24
+        height: 26
+        positionX: 13
+        positionY: 11
+      componentId: columns-line-chart-d6eae577-221a-4997-90df-362c54824bac
+    - id: b7376ba3-5e42-4875-8911-950049825c5e
+      position:
+        width: 18
+        height: 24
+        positionX: 1
+        positionY: 37
+      componentId: stacked-columns-chart-4be28c9a-9dd2-4f7c-a5b4-214bb033179f
+    - id: 52979b90-105d-47e1-aadf-7753f7fbcf87
+      position:
+        width: 18
+        height: 24
+        positionX: 19
+        positionY: 37
+      componentId: columns-line-chart-0f15438c-9458-4a62-b2b9-5860d12c2262
+  name: Visão Executiva
+  asides:
+  - active: true
+    asideId: 6ae8cd44-8841-4ddd-b267-67b28ff47175
+  visible: true
+  components:
+  - id: text-box-b915140a-ea1f-40ab-be7e-ba62206952dd
+    type: text-box
+    filters: []
+    settings:
+      content: <h2><strong>Reconciliação Metranet × SAP — Visão Executiva</strong></h2><p>Acompanhe o que está batendo, o que diverge e o que escapa do faturamento.</p>
+  - id: kpi-list-9785ba3f-75ed-4bf1-9d8a-fa2fdb83e5d4
+    type: kpi-list
+    filters: []
+    settings:
+      data:
+        kpis:
+        - id: a798fe91-9821-4696-bd4a-25571db2d396
+          kpi: 15e7de13-c18b-4005-a453-0f9887ef3167.541c3c50-2ec6-49d9-a982-30252bca1e88
+          show: true
+          order: 100
+        - id: 9e65297a-ae7c-47b4-af99-3321396d292e
+          kpi: 57e37adc-a20c-4f60-8f72-48ebfeca772c.d27ed7f1-422a-4cdf-bc88-fb574a9ac070
+          show: true
+          order: 200
+        - id: 21f69c48-7a84-4e34-96dd-57849005c228
+          kpi: 47aa7612-c244-4c02-9449-392c29cad3cf.0373b141-3417-409c-aacc-b10702cb1eb9
+          show: true
+          order: 300
+        - id: 94e1f435-fab2-420d-a40f-41e405039f16
+          kpi: 8c1d4881-9def-48e3-8c17-7a936d2ab256.080dacf8-4afb-4fa1-b0d0-8e0e8adb8673
+          show: true
+          order: 400
+        - id: 8bf39c89-f831-4a69-8ea4-cdd06094cc3a
+          kpi: e8e77a4c-6e32-4d16-b340-5b3ed8781097.5be19eea-3b02-4c41-ab4e-fa368bcc4e87
+          show: true
+          order: 500
+        - id: 1be76b30-e07d-4857-b6b1-eb5fc464332d
+          kpi: a521656f-0629-40bc-9601-326accf90bb0.42dfb7c3-48f8-48ef-94f1-f22f73f33b77
+          show: true
+          order: 600
+        - id: kk-leak
+          kpi: ds-leak-dir.a-leak-dir
+          show: true
+          order: 700
+        - id: kk-over
+          kpi: ds-over-dir.a-over-dir
+          show: true
+          order: 800
+      dataSources:
+      - id: 15e7de13-c18b-4005-a453-0f9887ef3167
+        filters: []
+        attributes:
+        - id: 541c3c50-2ec6-49d9-a982-30252bca1e88
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.3~s'
+          columnType: float
+          aggregation: true
+          displayName: Valor Total Metranet
+          shortDisplayName: ''
+        displayName: 15e7de13-c18b-4005-a453-0f9887ef3167
+        shortDisplayName: ''
+      - id: 57e37adc-a20c-4f60-8f72-48ebfeca772c
+        filters: []
+        attributes:
+        - id: d27ed7f1-422a-4cdf-bc88-fb574a9ac070
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.3~s'
+          columnType: float
+          aggregation: true
+          displayName: Valor Total SAP
+          shortDisplayName: ''
+        displayName: 57e37adc-a20c-4f60-8f72-48ebfeca772c
+        shortDisplayName: ''
+      - id: 47aa7612-c244-4c02-9449-392c29cad3cf
+        filters: []
+        attributes:
+        - id: 0373b141-3417-409c-aacc-b10702cb1eb9
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.3~s'
+          columnType: float
+          aggregation: true
+          displayName: Gap Líquido
+          shortDisplayName: ''
+        displayName: 47aa7612-c244-4c02-9449-392c29cad3cf
+        shortDisplayName: ''
+      - id: 8c1d4881-9def-48e3-8c17-7a936d2ab256
+        filters: []
+        attributes:
+        - id: 080dacf8-4afb-4fa1-b0d0-8e0e8adb8673
+          pql: SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)
+          unit: ''
+          format: ',.3~s'
+          columnType: float
+          aggregation: true
+          displayName: Sem Match SAP (Leakage)
+          shortDisplayName: ''
+        displayName: 8c1d4881-9def-48e3-8c17-7a936d2ab256
+        shortDisplayName: ''
+      - id: e8e77a4c-6e32-4d16-b340-5b3ed8781097
+        filters: []
+        attributes:
+        - id: 5be19eea-3b02-4c41-ab4e-fa368bcc4e87
+          pql: (SUM(CASE WHEN NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0) AND ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) <= 1 THEN 1 ELSE 0 END)) / CASE WHEN (COUNT("o_celonis_SalesOrder"."ID")) = 0 THEN NULL ELSE (COUNT("o_celonis_SalesOrder"."ID")) END
+          unit: ''
+          format: .1%
+          columnType: float
+          aggregation: true
+          displayName: '% Ordens Corretas'
+          shortDisplayName: ''
+        displayName: e8e77a4c-6e32-4d16-b340-5b3ed8781097
+        shortDisplayName: ''
+      - id: a521656f-0629-40bc-9601-326accf90bb0
+        filters: []
+        attributes:
+        - id: 42dfb7c3-48f8-48ef-94f1-f22f73f33b77
+          pql: SUM(CASE WHEN NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0) AND ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) > 1 THEN 1 ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Ordens Divergentes
+          shortDisplayName: ''
+        displayName: a521656f-0629-40bc-9601-326accf90bb0
+        shortDisplayName: ''
+      - id: ds-leak-dir
+        filters: []
+        attributes:
+        - id: a-leak-dir
+          pql: SUM(CASE WHEN (COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) - (COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0)) > 1 THEN (COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) - (COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0)) ELSE 0 END)
+          unit: ''
+          format: ',.3~s'
+          columnType: float
+          aggregation: true
+          displayName: Subfaturamento (Metra > SAP)
+          shortDisplayName: ''
+        displayName: ds-leak-dir
+        shortDisplayName: ''
+      - id: ds-over-dir
+        filters: []
+        attributes:
+        - id: a-over-dir
+          pql: SUM(CASE WHEN (COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0)) - (COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) > 1 THEN (COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0)) - (COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) ELSE 0 END)
+          unit: ''
+          format: ',.3~s'
+          columnType: float
+          aggregation: true
+          displayName: Sobrefaturamento (SAP > Metra)
+          shortDisplayName: ''
+        displayName: ds-over-dir
+        shortDisplayName: ''
+  - id: pie-chart-27130075-b286-4764-b721-5d346269fdad
+    type: pie-chart
+    filters: []
+    settings:
+      kpi: e27394c2-475a-4699-94d2-8b6d505d61a9
+      name: Distribuição do Valor por Status
+      category:
+      - e6fec716-e797-4535-bf4a-7f2fdac749cf
+      dataSources:
+      - id: 673858d2-f308-476a-b6b7-1b673f7e7843
+        filters: []
+        attributes:
+        - id: e6fec716-e797-4535-bf4a-7f2fdac749cf
+          pql: CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN 'Sem match SAP' WHEN ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) <= 1 THEN 'Correto' ELSE 'Divergente' END
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Status
+          shortDisplayName: ''
+        - id: e27394c2-475a-4699-94d2-8b6d505d61a9
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Valor Metranet
+          shortDisplayName: ''
+        displayName: 673858d2-f308-476a-b6b7-1b673f7e7843
+        shortDisplayName: ''
+      additionalKpis: []
+      colorRuleField: e6fec716-e797-4535-bf4a-7f2fdac749cf
+  - id: columns-line-chart-d6eae577-221a-4997-90df-362c54824bac
+    type: columns-line-chart
+    filters: []
+    settings:
+      name: Evolução por Competência — Metra × SAP × Gap
+      visuals:
+      - id: 19cb9be3-62ae-4861-b942-004a1cf47eab
+        mark:
+          type: bar
+          color: PRIMARY_40
+          orientation: vertical
+        order: 100
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - 75edaac6-edd3-44b7-9485-3fb180a4a707
+          y:
+            axis:
+              hide: false
+              position: left
+            field: 7f9f4b9d-e85b-4713-8025-5c6ac1dcfdde
+      - id: 62cbdd4d-c0b3-4e0d-9bb5-0c35afebb96b
+        mark:
+          type: bar
+          color: CONTEXT_70
+          orientation: vertical
+        order: 200
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - 75edaac6-edd3-44b7-9485-3fb180a4a707
+          y:
+            axis:
+              hide: false
+              position: left
+            field: c1a7546d-1bcc-409a-9ac8-e5b651f5ec75
+      - id: 3e78eb46-7ba2-48de-b545-dc4d2eb2501b
+        mark:
+          type: line
+          color: HIGHLIGHT_40
+          orientation: vertical
+        order: 300
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - 75edaac6-edd3-44b7-9485-3fb180a4a707
+          y:
+            axis:
+              hide: false
+              position: right
+            field: bb69f330-35c3-4aff-822d-2ce22ded487e
+      dataSources:
+      - id: f3ec2bc6-b775-41bf-9c42-6961bab9bc25
+        filters: []
+        attributes:
+        - id: 75edaac6-edd3-44b7-9485-3fb180a4a707
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."Competencia")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Competência
+          shortDisplayName: ''
+        - id: 7f9f4b9d-e85b-4713-8025-5c6ac1dcfdde
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Valor Metranet
+          shortDisplayName: ''
+        - id: c1a7546d-1bcc-409a-9ac8-e5b651f5ec75
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Valor SAP
+          shortDisplayName: ''
+        - id: bb69f330-35c3-4aff-822d-2ce22ded487e
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Gap
+          shortDisplayName: ''
+        displayName: f3ec2bc6-b775-41bf-9c42-6961bab9bc25
+        shortDisplayName: ''
+  - id: stacked-columns-chart-4be28c9a-9dd2-4f7c-a5b4-214bb033179f
+    type: stacked-columns-chart
+    filters: []
+    settings:
+      name: Composição do Valor Metranet por Competência
+      visuals:
+      - id: 06b5fac4-83d3-4453-a6a2-0644901a104a
+        mark:
+          type: bar
+        order: 100
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - cd2f8a96-e898-4d8d-9558-5138ca4c5709
+          y:
+            axis:
+              hide: false
+              position: bottom
+            stack:
+            - kpi: ba7bd760-8bcf-4be0-be2b-b4624289e34f
+              labels:
+                visible: false
+            - kpi: ca1f23c3-6c02-48da-b9a5-98175b57f0c7
+              labels:
+                visible: false
+            - kpi: a866be3f-987d-4394-9cbe-35c7c0d2154f
+              labels:
+                visible: false
+      dataSources:
+      - id: 642adfcd-894a-400a-9b0f-f692e7157f79
+        filters: []
+        attributes:
+        - id: cd2f8a96-e898-4d8d-9558-5138ca4c5709
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."Competencia")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Competência
+          shortDisplayName: ''
+        - id: ba7bd760-8bcf-4be0-be2b-b4624289e34f
+          pql: SUM(CASE WHEN NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0) AND ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) <= 1 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Conciliado
+          shortDisplayName: ''
+        - id: ca1f23c3-6c02-48da-b9a5-98175b57f0c7
+          pql: SUM(CASE WHEN NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0) AND ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) > 1 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Divergente
+          shortDisplayName: ''
+        - id: a866be3f-987d-4394-9cbe-35c7c0d2154f
+          pql: SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Sem match SAP
+          shortDisplayName: ''
+        displayName: 642adfcd-894a-400a-9b0f-f692e7157f79
+        shortDisplayName: ''
+  - id: columns-line-chart-0f15438c-9458-4a62-b2b9-5860d12c2262
+    type: columns-line-chart
+    filters: []
+    settings:
+      name: Taxa de Conciliação por Competência
+      visuals:
+      - id: db09a27b-a7a3-4777-aa0b-22c938a5ae6a
+        mark:
+          type: line
+          orientation: vertical
+        order: 100
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - 1b26eb99-f141-454e-88a4-9381a11b2cdc
+          y:
+            axis:
+              hide: false
+              position: left
+            field: 5216b7bc-7347-4451-8cc4-1f7cf9ac0f48
+      - id: 848f8257-01ef-4844-9da3-df4272bfdde0
+        mark:
+          type: line
+          orientation: vertical
+        order: 200
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - 1b26eb99-f141-454e-88a4-9381a11b2cdc
+          y:
+            axis:
+              hide: false
+              position: left
+            field: 61bf027f-1856-45ff-aa05-6c7c01a4c97a
+      - id: 790847d5-90b9-453d-93ad-c9372d8e0b7e
+        mark:
+          type: line
+          orientation: vertical
+        order: 300
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - 1b26eb99-f141-454e-88a4-9381a11b2cdc
+          y:
+            axis:
+              hide: false
+              position: left
+            field: b85f348b-b98a-4ccf-8f6b-9e7b579ccd76
+      dataSources:
+      - id: 96046ab6-c55f-4239-a6cb-a0168e86ef49
+        filters: []
+        attributes:
+        - id: 1b26eb99-f141-454e-88a4-9381a11b2cdc
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."Competencia")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Competência
+          shortDisplayName: ''
+        - id: 5216b7bc-7347-4451-8cc4-1f7cf9ac0f48
+          pql: (SUM(CASE WHEN NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0) AND ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) <= 1 THEN 1 ELSE 0 END)) / CASE WHEN (COUNT("o_celonis_SalesOrder"."ID")) = 0 THEN NULL ELSE (COUNT("o_celonis_SalesOrder"."ID")) END
+          unit: ''
+          format: .1%
+          columnType: float
+          aggregation: true
+          displayName: '% Corretos'
+          shortDisplayName: ''
+        - id: 61bf027f-1856-45ff-aa05-6c7c01a4c97a
+          pql: (SUM(CASE WHEN NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0) AND ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) > 1 THEN 1 ELSE 0 END)) / CASE WHEN (COUNT("o_celonis_SalesOrder"."ID")) = 0 THEN NULL ELSE (COUNT("o_celonis_SalesOrder"."ID")) END
+          unit: ''
+          format: .1%
+          columnType: float
+          aggregation: true
+          displayName: '% Divergentes'
+          shortDisplayName: ''
+        - id: b85f348b-b98a-4ccf-8f6b-9e7b579ccd76
+          pql: (SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN 1 ELSE 0 END)) / CASE WHEN (COUNT("o_celonis_SalesOrder"."ID")) = 0 THEN NULL ELSE (COUNT("o_celonis_SalesOrder"."ID")) END
+          unit: ''
+          format: .1%
+          columnType: float
+          aggregation: true
+          displayName: '% Sem match'
+          shortDisplayName: ''
+        displayName: 96046ab6-c55f-4239-a6cb-a0168e86ef49
+        shortDisplayName: ''
+- id: fc3da49c-0bd4-4922-b4bc-b797919368a1
+  grid:
+    mode: full-height
+    elements:
+    - id: 1113b4b8-3768-43ac-acc0-3b4748c34e2d
+      position:
+        width: 36
+        height: 4
+        positionX: 1
+        positionY: 1
+      componentId: text-box-08482c97-bf7a-49c6-8c41-1306787c9b19
+    - id: 09cd9dc6-de88-4de5-a6a0-c3ecd3e3d6fd
+      position:
+        width: 36
+        height: 6
+        positionX: 1
+        positionY: 5
+      componentId: kpi-list-cccdc9ef-23e3-414f-802f-3500c3c617fa
+    - id: d756c86b-657d-4f00-aebd-1effdbb38143
+      position:
+        width: 14
+        height: 24
+        positionX: 1
+        positionY: 11
+      componentId: columns-line-chart-eb2365ff-150d-4726-bdc3-e5dfdd5853f6
+    - id: 7345ab59-b620-4ee2-accd-e7fcf28a88bd
+      position:
+        width: 14
+        height: 24
+        positionX: 15
+        positionY: 11
+      componentId: columns-line-chart-84c22c99-055a-424f-8d98-26767a12d67f
+    - id: fe8b0843-85b2-4906-8c07-051be292426d
+      position:
+        width: 8
+        height: 24
+        positionX: 29
+        positionY: 11
+      componentId: pie-chart-3dc475ac-a238-4162-a10a-8d23c6b7fc77
+    - id: 4f68a9f3-7ecb-42bb-a496-849683bab49e
+      position:
+        width: 36
+        height: 36
+        positionX: 1
+        positionY: 35
+      componentId: table-4403a298-88eb-4fb0-a284-17c82329b1ee
+  name: Análise por Cliente
+  asides:
+  - active: true
+    asideId: 6ae8cd44-8841-4ddd-b267-67b28ff47175
+  visible: true
+  components:
+  - id: text-box-08482c97-bf7a-49c6-8c41-1306787c9b19
+    type: text-box
+    filters: []
+    settings:
+      content: <h2><strong>Análise por Cliente</strong></h2><p>Onde está concentrado o gap e quais pagadores exigem ação.</p>
+  - id: kpi-list-cccdc9ef-23e3-414f-802f-3500c3c617fa
+    type: kpi-list
+    filters: []
+    settings:
+      data:
+        kpis:
+        - id: 7b227ea6-2120-4517-b2ed-77d56deed0a8
+          kpi: 07dd8a34-28b0-4d3f-aa09-b810157e8603.68dace28-613f-427f-9727-c6b8a86046c9
+          show: true
+          order: 100
+        - id: dfc462a7-88cc-49d3-8cfe-09c955b4385d
+          kpi: 084bafd0-bce0-4f75-9839-617027cf1f7d.d90b74eb-5e74-4e9d-817e-5047181f982b
+          show: true
+          order: 200
+        - id: 7489294c-0dd9-45fa-b1bd-1cc7889ea9d1
+          kpi: fd4c24dc-ef33-40c7-b840-b925821233b8.f7371966-8217-40b6-8913-314f6814d86a
+          show: true
+          order: 300
+        - id: 7f2f120c-28fd-4dc4-ad88-a4ee5c27b489
+          kpi: 64ed1336-3cce-4053-a207-1b46d86b7357.69b9f982-55d4-4bd9-ac66-9b4a3c7603ac
+          show: true
+          order: 400
+      dataSources:
+      - id: 07dd8a34-28b0-4d3f-aa09-b810157e8603
+        filters: []
+        attributes:
+        - id: 68dace28-613f-427f-9727-c6b8a86046c9
+          pql: COUNT(DISTINCT PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CodPagador"))
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Clientes no Escopo
+          shortDisplayName: ''
+        displayName: 07dd8a34-28b0-4d3f-aa09-b810157e8603
+        shortDisplayName: ''
+      - id: 084bafd0-bce0-4f75-9839-617027cf1f7d
+        filters: []
+        attributes:
+        - id: d90b74eb-5e74-4e9d-817e-5047181f982b
+          pql: COUNT(DISTINCT CASE WHEN ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) > 1 AND NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0) THEN PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CodPagador") END)
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Clientes Divergentes
+          shortDisplayName: ''
+        displayName: 084bafd0-bce0-4f75-9839-617027cf1f7d
+        shortDisplayName: ''
+      - id: fd4c24dc-ef33-40c7-b840-b925821233b8
+        filters: []
+        attributes:
+        - id: f7371966-8217-40b6-8913-314f6814d86a
+          pql: COUNT(DISTINCT CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CodPagador") END)
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Clientes com Leakage
+          shortDisplayName: ''
+        displayName: fd4c24dc-ef33-40c7-b840-b925821233b8
+        shortDisplayName: ''
+      - id: 64ed1336-3cce-4053-a207-1b46d86b7357
+        filters: []
+        attributes:
+        - id: 69b9f982-55d4-4bd9-ac66-9b4a3c7603ac
+          pql: (COUNT(DISTINCT CASE WHEN ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) > 1 THEN PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CodPagador") END)) / CASE WHEN (COUNT(DISTINCT PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CodPagador"))) = 0 THEN NULL ELSE (COUNT(DISTINCT PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CodPagador"))) END
+          unit: ''
+          format: .1%
+          columnType: float
+          aggregation: true
+          displayName: '% Clientes com Problema'
+          shortDisplayName: ''
+        displayName: 64ed1336-3cce-4053-a207-1b46d86b7357
+        shortDisplayName: ''
+  - id: columns-line-chart-eb2365ff-150d-4726-bdc3-e5dfdd5853f6
+    type: columns-line-chart
+    filters: []
+    settings:
+      name: Gap por Cliente (Metra − SAP)
+      visuals:
+      - id: 26fb0a6f-09df-4a39-962a-34af590f610b
+        mark:
+          type: bar
+          orientation: vertical
+        order: 100
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - 64b331f2-a21d-417c-afd3-0dae6b1fc1c6
+          y:
+            axis:
+              hide: false
+              position: left
+            field: 18346dcf-695d-43ed-ae2e-0fe3c808ff33
+      dataSources:
+      - id: 91c5b095-735e-456d-8ed8-bca992ce851c
+        filters: []
+        attributes:
+        - id: 64b331f2-a21d-417c-afd3-0dae6b1fc1c6
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CodPagador")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: CodPagador
+          shortDisplayName: ''
+        - id: 18346dcf-695d-43ed-ae2e-0fe3c808ff33
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Gap
+          shortDisplayName: ''
+        displayName: 91c5b095-735e-456d-8ed8-bca992ce851c
+        shortDisplayName: ''
+  - id: columns-line-chart-84c22c99-055a-424f-8d98-26767a12d67f
+    type: columns-line-chart
+    filters: []
+    settings:
+      name: Leakage por Cliente (sem match no SAP)
+      visuals:
+      - id: c96a0000-f03a-4be8-b0e3-83615a959791
+        mark:
+          type: bar
+          orientation: vertical
+        order: 100
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - 71df3f8c-9891-4c75-9e2f-f5693fa0ef79
+          y:
+            axis:
+              hide: false
+              position: left
+            field: 1b065e42-ea6e-455e-b3e4-aa8724ced7a2
+      dataSources:
+      - id: 07a73880-bac7-4f8f-900a-5c17384701fa
+        filters: []
+        attributes:
+        - id: 71df3f8c-9891-4c75-9e2f-f5693fa0ef79
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CodPagador")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: CodPagador
+          shortDisplayName: ''
+        - id: 1b065e42-ea6e-455e-b3e4-aa8724ced7a2
+          pql: SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Valor sem match
+          shortDisplayName: ''
+        displayName: 07a73880-bac7-4f8f-900a-5c17384701fa
+        shortDisplayName: ''
+  - id: pie-chart-3dc475ac-a238-4162-a10a-8d23c6b7fc77
+    type: pie-chart
+    filters: []
+    settings:
+      kpi: 67b998ea-87db-4a44-bc53-1c2d3e29f560
+      name: Valor Metranet por Categoria de Cliente
+      category:
+      - 7170d2ca-42ef-4821-909e-dfc42c57399e
+      dataSources:
+      - id: 7ed16470-c0d5-454c-8274-536aa898833c
+        filters: []
+        attributes:
+        - id: 7170d2ca-42ef-4821-909e-dfc42c57399e
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CategoriaCliente")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Categoria
+          shortDisplayName: ''
+        - id: 67b998ea-87db-4a44-bc53-1c2d3e29f560
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Valor Metranet
+          shortDisplayName: ''
+        displayName: 7ed16470-c0d5-454c-8274-536aa898833c
+        shortDisplayName: ''
+      additionalKpis: []
+      colorRuleField: 7170d2ca-42ef-4821-909e-dfc42c57399e
+  - id: table-4403a298-88eb-4fb0-a284-17c82329b1ee
+    type: table
+    filters: []
+    settings:
+      data:
+        columns:
+        - id: 9996a7a3-0897-4ede-88bf-243ce5e1a3f9
+          field: e27603d6-7a3d-4682-80c7-0b03cf13e004
+          order: 100
+        - id: 411b7777-d3d9-4c67-af99-9b66df8d4ae8
+          field: 877a35af-3c1b-407a-b784-81e99b60ef16
+          order: 200
+        - id: 617d8ad4-9131-431e-a156-372fb910704a
+          field: 77766e86-d957-4184-bdc5-01878e90b6e5
+          order: 300
+        - id: 388ee2f3-112e-4bfa-a499-06e3d327af69
+          field: 343fb894-1a2f-4b45-83e4-290f30888511
+          order: 400
+        - id: 842ae15f-8ccd-417c-90f6-643e6157aee8
+          field: 14e8dc7a-3682-46f0-93fa-a08f240508cd
+          order: 500
+        - id: bb739c3a-be02-4f45-9f58-3754ec7d12ff
+          field: 64d34d2f-5582-4d2c-9176-941db2d9ce32
+          order: 600
+        - id: e00774ca-592b-4e66-91c1-07aebb399577
+          field: e60dc9c7-dfed-4bb8-8ca3-a0dc2f3d7a0d
+          order: 700
+        - id: 405e05b1-5664-47d9-ace3-2e44aaf1c95d
+          field: 358c20e2-690b-40f8-bb62-f22313e4d6dd
+          order: 800
+        - id: 05f7bfd8-8496-482b-aca5-18851ff020bb
+          field: 49bf8802-3b08-437e-9042-9bf00a5321af
+          order: 900
+          visualMapping:
+            rule: CONTEXT
+            colorStyle: background
+      dataSources:
+      - id: 711c536b-225a-4596-b185-c42c6fc17ce1
+        pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CodPagador") PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."NomeCompleto")
+        filters: []
+        attributes:
+        - id: e27603d6-7a3d-4682-80c7-0b03cf13e004
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CodPagador")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: CodPagador
+          shortDisplayName: ''
+        - id: 877a35af-3c1b-407a-b784-81e99b60ef16
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."NomeCompleto")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Nome do Cliente
+          shortDisplayName: ''
+        - id: 77766e86-d957-4184-bdc5-01878e90b6e5
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Valor Metranet
+          shortDisplayName: ''
+        - id: 343fb894-1a2f-4b45-83e4-290f30888511
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Valor SAP
+          shortDisplayName: ''
+        - id: 14e8dc7a-3682-46f0-93fa-a08f240508cd
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Diferença
+          shortDisplayName: ''
+        - id: 64d34d2f-5582-4d2c-9176-941db2d9ce32
+          pql: SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Valor sem Match
+          shortDisplayName: ''
+        - id: e60dc9c7-dfed-4bb8-8ca3-a0dc2f3d7a0d
+          pql: SUM(CASE WHEN NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0) AND ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) > 1 THEN 1 ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Ordens Divergentes
+          shortDisplayName: ''
+        - id: 358c20e2-690b-40f8-bb62-f22313e4d6dd
+          pql: (SUM(CASE WHEN NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0) AND ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) <= 1 THEN 1 ELSE 0 END)) / CASE WHEN (COUNT("o_celonis_SalesOrder"."ID")) = 0 THEN NULL ELSE (COUNT("o_celonis_SalesOrder"."ID")) END
+          unit: ''
+          format: .1%
+          columnType: float
+          aggregation: true
+          displayName: '% Corretos'
+          shortDisplayName: ''
+        - id: 49bf8802-3b08-437e-9042-9bf00a5321af
+          pql: CASE WHEN SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN 1 ELSE 0 END) = COUNT("o_celonis_SalesOrder"."ID") THEN 'Sem match SAP' WHEN ABS(SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) <= 1 THEN 'Correto' ELSE 'Divergente' END
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: true
+          displayName: Status
+          shortDisplayName: ''
+        displayName: 711c536b-225a-4596-b185-c42c6fc17ce1
+        shortDisplayName: ''
+- id: 75b79757-550d-48b8-a5fd-0952a6cdc1bf
+  grid:
+    mode: full-height
+    elements:
+    - id: e8193a8f-ab5a-4f14-a967-71cdad1c97bb
+      position:
+        width: 36
+        height: 4
+        positionX: 1
+        positionY: 1
+      componentId: text-box-7ced6d27-ad08-4b92-a26f-820eb884c2ed
+    - id: 5cd7df81-6726-4397-a413-67f0cd3d3bfc
+      position:
+        width: 36
+        height: 6
+        positionX: 1
+        positionY: 5
+      componentId: kpi-list-cbe0caad-c1bd-4c3f-b815-33c62732176f
+    - id: 81e3a3ec-25ac-4dea-8aeb-17e19fd12cac
+      position:
+        width: 18
+        height: 24
+        positionX: 1
+        positionY: 11
+      componentId: columns-line-chart-0ab9dff2-c77c-4585-a700-2a20873c241c
+    - id: a051cef4-30e6-498b-a9f4-96bd0c575548
+      position:
+        width: 18
+        height: 24
+        positionX: 19
+        positionY: 11
+      componentId: stacked-columns-chart-38eef143-8a18-492f-9281-3b0c9601ed8b
+    - id: 13609a63-1310-4c79-9781-fbdf6db451e4
+      position:
+        width: 12
+        height: 26
+        positionX: 1
+        positionY: 35
+      componentId: columns-line-chart-0432cab7-3b0d-4944-9a99-39c743c30eaf
+    - id: a5d2274d-e95c-40bc-a199-c59ea0dddc8a
+      position:
+        width: 24
+        height: 26
+        positionX: 13
+        positionY: 35
+      componentId: table-c5daff02-f754-46b4-8155-3482547f870e
+  name: Produtos & Serviços
+  asides:
+  - active: true
+    asideId: 6ae8cd44-8841-4ddd-b267-67b28ff47175
+  visible: true
+  components:
+  - id: text-box-7ced6d27-ad08-4b92-a26f-820eb884c2ed
+    type: text-box
+    filters: []
+    settings:
+      content: '<h2><strong>Produtos, Serviços e Filiais</strong></h2><p>Corte operacional: quais linhas de serviço concentram divergência.</p>'
+  - id: kpi-list-cbe0caad-c1bd-4c3f-b815-33c62732176f
+    type: kpi-list
+    filters: []
+    settings:
+      data:
+        kpis:
+        - id: 0b98cd9f-4aff-4218-9f72-7457bff54a80
+          kpi: 08811ec5-461a-4458-b7dc-298d3d7cbb66.ae5e3d88-d1fb-4f6a-88fb-afa6a45d740f
+          show: true
+          order: 100
+        - id: 5cc2f8fc-7914-48fb-968e-b332f86ea355
+          kpi: 710a4f93-79e0-40db-ab0b-de6dd0720e8b.eea05170-6e94-4022-83b7-a95c931961df
+          show: true
+          order: 200
+        - id: cab398c2-57ad-4b86-8330-39fd3ae6c1e3
+          kpi: d1cd8469-91f2-43e4-acb7-9ed59a0c480d.5e3ba96c-aee7-434d-b82b-4a32aa968c4c
+          show: true
+          order: 300
+        - id: 6be4f57e-3a1c-4b63-9bf6-eaaadb419260
+          kpi: 0b4bd866-6101-4dd9-92c0-89fad34a0f9e.30b6f41d-94fa-4bcf-b175-4370faa2591d
+          show: true
+          order: 400
+      dataSources:
+      - id: 08811ec5-461a-4458-b7dc-298d3d7cbb66
+        filters: []
+        attributes:
+        - id: ae5e3d88-d1fb-4f6a-88fb-afa6a45d740f
+          pql: COUNT(DISTINCT PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."PRODUTO"))
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Produtos no Escopo
+          shortDisplayName: ''
+        displayName: 08811ec5-461a-4458-b7dc-298d3d7cbb66
+        shortDisplayName: ''
+      - id: 710a4f93-79e0-40db-ab0b-de6dd0720e8b
+        filters: []
+        attributes:
+        - id: eea05170-6e94-4022-83b7-a95c931961df
+          pql: COUNT(DISTINCT CASE WHEN ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) > 1 THEN PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."PRODUTO") END)
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Produtos c/ Divergência
+          shortDisplayName: ''
+        displayName: 710a4f93-79e0-40db-ab0b-de6dd0720e8b
+        shortDisplayName: ''
+      - id: d1cd8469-91f2-43e4-acb7-9ed59a0c480d
+        filters: []
+        attributes:
+        - id: 5e3ba96c-aee7-434d-b82b-4a32aa968c4c
+          pql: SUM(CASE WHEN NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0) AND ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) > 1 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)
+          unit: ''
+          format: ',.3~s'
+          columnType: float
+          aggregation: true
+          displayName: Valor Divergente
+          shortDisplayName: ''
+        displayName: d1cd8469-91f2-43e4-acb7-9ed59a0c480d
+        shortDisplayName: ''
+      - id: 0b4bd866-6101-4dd9-92c0-89fad34a0f9e
+        filters: []
+        attributes:
+        - id: 30b6f41d-94fa-4bcf-b175-4370faa2591d
+          pql: SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)
+          unit: ''
+          format: ',.3~s'
+          columnType: float
+          aggregation: true
+          displayName: Valor sem Match
+          shortDisplayName: ''
+        displayName: 0b4bd866-6101-4dd9-92c0-89fad34a0f9e
+        shortDisplayName: ''
+  - id: columns-line-chart-0ab9dff2-c77c-4585-a700-2a20873c241c
+    type: columns-line-chart
+    filters: []
+    settings:
+      name: Metra × SAP por Produto
+      visuals:
+      - id: ea702c55-bd8e-4914-b284-0527d2ba4654
+        mark:
+          type: bar
+          color: PRIMARY_40
+          orientation: vertical
+        order: 100
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - 103c04d8-ea1f-457b-af2c-ad0da5492a4b
+          y:
+            axis:
+              hide: false
+              position: left
+            field: 4c738cf8-073b-42ba-8436-499ecd9ced16
+      - id: 5037e693-6721-4908-82fb-6226e402c5b5
+        mark:
+          type: bar
+          color: CONTEXT_70
+          orientation: vertical
+        order: 200
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - 103c04d8-ea1f-457b-af2c-ad0da5492a4b
+          y:
+            axis:
+              hide: false
+              position: left
+            field: cdf4c52c-f110-45c3-acdf-ce4ab5b5964d
+      dataSources:
+      - id: 6c63f5e5-ad2d-486f-aa77-b2702e309b97
+        filters: []
+        attributes:
+        - id: 103c04d8-ea1f-457b-af2c-ad0da5492a4b
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."PRODUTO")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Produto
+          shortDisplayName: ''
+        - id: 4c738cf8-073b-42ba-8436-499ecd9ced16
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Valor Metranet
+          shortDisplayName: ''
+        - id: cdf4c52c-f110-45c3-acdf-ce4ab5b5964d
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Valor SAP
+          shortDisplayName: ''
+        displayName: 6c63f5e5-ad2d-486f-aa77-b2702e309b97
+        shortDisplayName: ''
+  - id: stacked-columns-chart-38eef143-8a18-492f-9281-3b0c9601ed8b
+    type: stacked-columns-chart
+    filters: []
+    settings:
+      name: Status por Grupo de Serviço
+      visuals:
+      - id: ff1baf3a-36fa-4e5e-a2c4-94ba681e2ecf
+        mark:
+          type: bar
+        order: 100
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - 1c194a75-6eb1-4210-8e8a-3db65fe53caa
+          y:
+            axis:
+              hide: false
+              position: bottom
+            stack:
+            - kpi: 6e70944b-52c6-4e85-90b9-650d7c005684
+              labels:
+                visible: false
+            - kpi: 422fd58f-1636-4a99-8b75-22c2f467ff34
+              labels:
+                visible: false
+            - kpi: 486a218e-5be5-49af-823e-6357231a5947
+              labels:
+                visible: false
+      dataSources:
+      - id: b32c5c4c-baff-4f6c-8981-aaed3acfbb2d
+        filters: []
+        attributes:
+        - id: 1c194a75-6eb1-4210-8e8a-3db65fe53caa
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."GrupoServico")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Grupo de Serviço
+          shortDisplayName: ''
+        - id: 6e70944b-52c6-4e85-90b9-650d7c005684
+          pql: SUM(CASE WHEN NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0) AND ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) <= 1 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Conciliado
+          shortDisplayName: ''
+        - id: 422fd58f-1636-4a99-8b75-22c2f467ff34
+          pql: SUM(CASE WHEN NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0) AND ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) > 1 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Divergente
+          shortDisplayName: ''
+        - id: 486a218e-5be5-49af-823e-6357231a5947
+          pql: SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Sem match
+          shortDisplayName: ''
+        displayName: b32c5c4c-baff-4f6c-8981-aaed3acfbb2d
+        shortDisplayName: ''
+  - id: columns-line-chart-0432cab7-3b0d-4944-9a99-39c743c30eaf
+    type: columns-line-chart
+    filters: []
+    settings:
+      name: Gap por Filial
+      visuals:
+      - id: 6c979210-a8ad-4cac-afcf-82bafad9d226
+        mark:
+          type: bar
+          orientation: vertical
+        order: 100
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - dc32584b-b45d-4a5f-809b-3fc8dab1513e
+          y:
+            axis:
+              hide: false
+              position: left
+            field: 116c774b-5992-447b-a0fd-7c4673fb9a09
+      dataSources:
+      - id: 87bd7287-0398-4df5-9a96-f5041d812c4b
+        filters: []
+        attributes:
+        - id: dc32584b-b45d-4a5f-809b-3fc8dab1513e
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."FILIAL")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Filial
+          shortDisplayName: ''
+        - id: 116c774b-5992-447b-a0fd-7c4673fb9a09
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Gap
+          shortDisplayName: ''
+        displayName: 87bd7287-0398-4df5-9a96-f5041d812c4b
+        shortDisplayName: ''
+  - id: table-c5daff02-f754-46b4-8155-3482547f870e
+    type: table
+    filters: []
+    settings:
+      data:
+        columns:
+        - id: c6cf0b91-be55-4552-8c71-89d9a74ff481
+          field: e0a6943d-fe9b-49be-ab74-1a5ac1230b22
+          order: 100
+        - id: a159059c-a6fe-47f6-bafb-636685a617d9
+          field: 6aff06b8-0e4f-4674-9639-a6ee065faec7
+          order: 200
+        - id: 8598ba6d-48fc-4ff3-be22-2f8ca20a4393
+          field: fc2f682a-37ec-474a-b435-e317f9aae796
+          order: 300
+        - id: fa0666d5-7bde-4ce9-8f7f-995b0ff22fc1
+          field: 0fd82cc4-061e-4fe8-9e68-1b822885b74b
+          order: 400
+        - id: 064638a5-d17c-492f-bf31-2c73dd6489e8
+          field: 078525a1-0417-46eb-b5ec-65d19ac53101
+          order: 500
+        - id: 1210c130-c532-4246-8758-18ba91bcfadb
+          field: 40d54287-6ce0-4f23-932c-e04a3e7bbce6
+          order: 600
+        - id: 510be3c1-f1bc-4026-8172-d53ff1fe2da1
+          field: 2a7bb8fa-e287-4390-900d-f010a16bd4e5
+          order: 700
+        - id: 44e91bd0-e22c-4c1e-a2b5-a147094aebf2
+          field: 3da7c7e5-dd12-4ef9-b269-be2052a07b65
+          order: 800
+          visualMapping:
+            rule: CONTEXT
+            colorStyle: background
+      dataSources:
+      - id: 36069046-3193-4df7-bf63-5faf64935232
+        pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."PRODUTO") PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."GrupoServico") PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."TipoServico")
+        filters: []
+        attributes:
+        - id: e0a6943d-fe9b-49be-ab74-1a5ac1230b22
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."PRODUTO")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Produto
+          shortDisplayName: ''
+        - id: 6aff06b8-0e4f-4674-9639-a6ee065faec7
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."GrupoServico")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Grupo de Serviço
+          shortDisplayName: ''
+        - id: fc2f682a-37ec-474a-b435-e317f9aae796
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."TipoServico")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Tipo de Serviço
+          shortDisplayName: ''
+        - id: 0fd82cc4-061e-4fe8-9e68-1b822885b74b
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Valor Metranet
+          shortDisplayName: ''
+        - id: 078525a1-0417-46eb-b5ec-65d19ac53101
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Valor SAP
+          shortDisplayName: ''
+        - id: 40d54287-6ce0-4f23-932c-e04a3e7bbce6
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Diferença
+          shortDisplayName: ''
+        - id: 2a7bb8fa-e287-4390-900d-f010a16bd4e5
+          pql: COUNT("o_celonis_SalesOrder"."ID")
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Qtd Ordens
+          shortDisplayName: ''
+        - id: 3da7c7e5-dd12-4ef9-b269-be2052a07b65
+          pql: CASE WHEN SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN 1 ELSE 0 END) = COUNT("o_celonis_SalesOrder"."ID") THEN 'Sem match SAP' WHEN ABS(SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) <= 1 THEN 'Correto' ELSE 'Divergente' END
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: true
+          displayName: Status
+          shortDisplayName: ''
+        displayName: 36069046-3193-4df7-bf63-5faf64935232
+        shortDisplayName: ''
+- id: 494022b9-857a-43cd-a9ae-f4990e10ddc9
+  grid:
+    mode: full-height
+    elements:
+    - id: e761f178-002d-49c4-8d44-111702cae268
+      position:
+        width: 36
+        height: 4
+        positionX: 1
+        positionY: 1
+      componentId: text-box-d3a5577f-23f2-4622-b7f6-f223b31921a8
+    - id: 1f6b69fb-862e-4ec5-bdc0-380d001a9e58
+      position:
+        width: 36
+        height: 6
+        positionX: 1
+        positionY: 5
+      componentId: kpi-list-8dee57ec-cf59-412f-9e75-bf6bf1603103
+    - id: 80029069-09bc-4bdf-bba5-0eb45abf15b2
+      position:
+        width: 24
+        height: 24
+        positionX: 1
+        positionY: 11
+      componentId: histogram-9756a5fa-d57c-463c-b6bc-b390f4519b9f
+    - id: be26d7ee-d041-45a0-91aa-382de0879d4e
+      position:
+        width: 12
+        height: 24
+        positionX: 25
+        positionY: 11
+      componentId: pie-chart-498953f4-6f2d-436a-a088-4a0b05a5a335
+    - id: ab066fba-371d-4452-a02b-4f547e5b8873
+      position:
+        width: 36
+        height: 30
+        positionX: 1
+        positionY: 35
+      componentId: table-c6ffbbc8-4df2-4672-8a37-082b1abf5bb4
+    - id: 639f2e58-9329-4f4b-bf2a-ca71b656af61
+      position:
+        width: 36
+        height: 26
+        positionX: 1
+        positionY: 65
+      componentId: table-5f8991f5-f976-426b-8a1e-1b28efc323c1
+  name: Drill Item (OV × NumDoc)
+  asides:
+  - active: true
+    asideId: 6ae8cd44-8841-4ddd-b267-67b28ff47175
+  visible: true
+  components:
+  - id: text-box-d3a5577f-23f2-4622-b7f6-f223b31921a8
+    type: text-box
+    filters: []
+    settings:
+      content: '<h2><strong>Drill Item — Ordem de Venda × NumDoc</strong></h2><p>Item a item: onde exatamente a diferença nasce.</p>'
+  - id: kpi-list-8dee57ec-cf59-412f-9e75-bf6bf1603103
+    type: kpi-list
+    filters: []
+    settings:
+      data:
+        kpis:
+        - id: 1be8e1f4-7d07-44f0-8355-d8863ecf1d6f
+          kpi: a9b47716-3849-46a6-b48e-3125560fe7ca.33bfe260-7bf1-4a46-8565-a990b481a88a
+          show: true
+          order: 100
+        - id: be85e861-4ba7-42ab-aa66-5a0da0451af2
+          kpi: 17f646fd-7543-4570-834a-6c4977b973f9.23f0d327-66e7-4e7d-90d6-7e7bd975c4f5
+          show: true
+          order: 200
+        - id: ec237ea8-ab2b-4686-8a84-abaf226c755b
+          kpi: ec5739ae-8815-4178-92ea-7051286a1979.14e2fbb1-dbf7-40ff-80a7-e881d247a8df
+          show: true
+          order: 300
+        - id: 5f98397b-e69b-4764-9784-d9e6233e30af
+          kpi: 620efe6d-bd72-40fc-ba58-9d812bd5ff2f.7c477f59-548a-4455-b10f-1cbce35f9cc2
+          show: true
+          order: 400
+        - id: abda3628-8eea-401c-9df5-de76ceab799d
+          kpi: 301fa991-c250-4ccf-a350-ac293b0da6c0.d51b0501-255f-4d98-a37d-3dd6a850b3bc
+          show: true
+          order: 500
+      dataSources:
+      - id: a9b47716-3849-46a6-b48e-3125560fe7ca
+        filters: []
+        attributes:
+        - id: 33bfe260-7bf1-4a46-8565-a990b481a88a
+          pql: COUNT("o_celonis_SalesOrder"."ID")
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Ordens no Escopo
+          shortDisplayName: ''
+        displayName: a9b47716-3849-46a6-b48e-3125560fe7ca
+        shortDisplayName: ''
+      - id: 17f646fd-7543-4570-834a-6c4977b973f9
+        filters: []
+        attributes:
+        - id: 23f0d327-66e7-4e7d-90d6-7e7bd975c4f5
+          pql: SUM(CASE WHEN NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0) AND ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) > 1 THEN 1 ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Divergentes
+          shortDisplayName: ''
+        displayName: 17f646fd-7543-4570-834a-6c4977b973f9
+        shortDisplayName: ''
+      - id: ec5739ae-8815-4178-92ea-7051286a1979
+        filters: []
+        attributes:
+        - id: 14e2fbb1-dbf7-40ff-80a7-e881d247a8df
+          pql: SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN 1 ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Sem Match SAP
+          shortDisplayName: ''
+        displayName: ec5739ae-8815-4178-92ea-7051286a1979
+        shortDisplayName: ''
+      - id: 620efe6d-bd72-40fc-ba58-9d812bd5ff2f
+        filters: []
+        attributes:
+        - id: 7c477f59-548a-4455-b10f-1cbce35f9cc2
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.3~s'
+          columnType: float
+          aggregation: true
+          displayName: Delta Acumulado
+          shortDisplayName: ''
+        displayName: 620efe6d-bd72-40fc-ba58-9d812bd5ff2f
+        shortDisplayName: ''
+      - id: 301fa991-c250-4ccf-a350-ac293b0da6c0
+        filters: []
+        attributes:
+        - id: d51b0501-255f-4d98-a37d-3dd6a850b3bc
+          pql: AVG(ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Delta Médio |R$|
+          shortDisplayName: ''
+        displayName: 301fa991-c250-4ccf-a350-ac293b0da6c0
+        shortDisplayName: ''
+  - id: histogram-9756a5fa-d57c-463c-b6bc-b390f4519b9f
+    type: histogram
+    filters: []
+    settings:
+      name: Distribuição do Delta por Item (Metra − SAP)
+      color: PRIMARY_70
+      attribute: ae7eeb72-b75a-4d1e-9648-9308ae4067c5
+      annotations:
+      - id: 6bbbbe65-d680-46ad-89b1-5124e3653a02
+        kpi: 422d2157-80c1-4af5-bed3-69062aae1834
+        line: solid
+        color: CONTEXT_40
+        order: 100
+        showValue: true
+        labelAlign: middle
+        showDisplayName: true
+      dataSources:
+      - id: 5ce01287-375b-40e0-b733-1c9310ccb92f
+        filters:
+        - pql: FILTER NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0);
+          isReferenced: false
+        attributes:
+        - id: ae7eeb72-b75a-4d1e-9648-9308ae4067c5
+          pql: (COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: .0f
+          columnType: float
+          aggregation: false
+          displayName: Delta (R$)
+          shortDisplayName: ''
+        - id: 422d2157-80c1-4af5-bed3-69062aae1834
+          pql: AVG((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0)))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Delta médio
+          shortDisplayName: ''
+        displayName: 5ce01287-375b-40e0-b733-1c9310ccb92f
+        shortDisplayName: ''
+  - id: pie-chart-498953f4-6f2d-436a-a088-4a0b05a5a335
+    type: pie-chart
+    filters: []
+    settings:
+      kpi: 424eb569-2aca-4908-b6b9-5beb5f31ad53
+      name: Ordens por Moeda de Faturamento
+      category:
+      - 29b68bb6-221a-4e1c-ac4f-25ac25bfae9e
+      dataSources:
+      - id: 7e7b1972-9f91-4ffa-9b8f-7356e0c19ad1
+        filters: []
+        attributes:
+        - id: 29b68bb6-221a-4e1c-ac4f-25ac25bfae9e
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."MoedaFaturamento")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Moeda
+          shortDisplayName: ''
+        - id: 424eb569-2aca-4908-b6b9-5beb5f31ad53
+          pql: COUNT("o_celonis_SalesOrder"."ID")
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Qtd Ordens
+          shortDisplayName: ''
+        displayName: 7e7b1972-9f91-4ffa-9b8f-7356e0c19ad1
+        shortDisplayName: ''
+      additionalKpis: []
+      colorRuleField: 29b68bb6-221a-4e1c-ac4f-25ac25bfae9e
+  - id: table-c6ffbbc8-4df2-4672-8a37-082b1abf5bb4
+    type: table
+    filters: []
+    settings:
+      data:
+        columns:
+        - id: b32465b9-fe4c-4d3b-8df7-079c2898a5e9
+          field: b9195051-6515-413f-a42a-0fbd80b91f88
+          order: 100
+        - id: 27995485-ad08-4c94-9bed-204c1484a33a
+          field: 56430c63-6a8e-4f55-b8e3-b7fd25e3bf24
+          order: 200
+        - id: d05d8d45-9ec3-4279-898d-8788cfe640a1
+          field: 28448484-2c0f-4a15-8865-eb29e5887e40
+          order: 300
+        - id: d66dfb50-2c00-460d-b811-2304c3efcf7a
+          field: f9254f0a-1798-4d30-8109-038d6e9f5df7
+          order: 400
+        - id: d333ff1d-07b6-4c2d-bfc1-2c3f0f28cc6f
+          field: 16aa2415-bd03-4013-96c8-dafb82328a34
+          order: 500
+        - id: 88c20eeb-5096-4181-b4e8-61912b6b3ef3
+          field: 33919b07-1569-42ab-976e-e17a81f45268
+          order: 600
+        - id: aa66027f-8a8b-41a5-87ee-b96f3fac2ad4
+          field: 3997bb43-29c0-43ed-8810-e9b8bd63d0f4
+          order: 700
+        - id: 646141a2-af26-435c-abc8-913fee20c97e
+          field: 97d8e2ff-1694-4c51-8b34-7a0840b2db12
+          order: 800
+          visualMapping:
+            rule: CONTEXT
+            colorStyle: background
+      dataSources:
+      - id: fc8ad3a9-afe1-45ea-bdc6-d93fe7e610b9
+        pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."NumDoc") "o_celonis_SalesOrder"."CustomerPurchaseOrder" PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."NomeCompleto") PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."Competencia")
+        filters: []
+        attributes:
+        - id: b9195051-6515-413f-a42a-0fbd80b91f88
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."NumDoc")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: NumDoc (Metra)
+          shortDisplayName: ''
+        - id: 56430c63-6a8e-4f55-b8e3-b7fd25e3bf24
+          pql: '"o_celonis_SalesOrder"."CustomerPurchaseOrder"'
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Ordem de Venda
+          shortDisplayName: ''
+        - id: 28448484-2c0f-4a15-8865-eb29e5887e40
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."NomeCompleto")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Cliente
+          shortDisplayName: ''
+        - id: f9254f0a-1798-4d30-8109-038d6e9f5df7
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."Competencia")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Competência
+          shortDisplayName: ''
+        - id: 16aa2415-bd03-4013-96c8-dafb82328a34
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Valor Metranet
+          shortDisplayName: ''
+        - id: 33919b07-1569-42ab-976e-e17a81f45268
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Valor SAP
+          shortDisplayName: ''
+        - id: 3997bb43-29c0-43ed-8810-e9b8bd63d0f4
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Delta
+          shortDisplayName: ''
+        - id: 97d8e2ff-1694-4c51-8b34-7a0840b2db12
+          pql: CASE WHEN SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN 1 ELSE 0 END) = COUNT("o_celonis_SalesOrder"."ID") THEN 'Sem match SAP' WHEN ABS(SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) <= 1 THEN 'Correto' ELSE 'Divergente' END
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: true
+          displayName: Status
+          shortDisplayName: ''
+        displayName: fc8ad3a9-afe1-45ea-bdc6-d93fe7e610b9
+        shortDisplayName: ''
+  - id: table-5f8991f5-f976-426b-8a1e-1b28efc323c1
+    type: table
+    filters: []
+    settings:
+      data:
+        columns:
+        - id: 2e090a8f-1f37-4c4c-bd60-814ab3299008
+          field: 95af9300-bf75-4adc-a911-aacffecea2f7
+          order: 100
+        - id: 0f152b89-0177-47c9-aa38-7d4ddd06241e
+          field: 28f7c121-4a85-477c-ac02-5f67b99923db
+          order: 200
+        - id: bac71d4d-556c-4a9a-9752-e8cabff8925c
+          field: 2fa034dd-6438-4255-a91c-fb5aef078fd5
+          order: 300
+        - id: 75942fcf-1874-4f8f-9ac1-3645b84d25b0
+          field: 2516eca2-9019-4d6e-ba18-96d3f52862be
+          order: 400
+        - id: 9f1ef8b2-4f68-4caa-958c-ec39629f14e4
+          field: bcfe2867-eb1a-4e97-8254-e74ec7568a74
+          order: 500
+      dataSources:
+      - id: e5367292-4b29-4a97-9632-4a55805d89c6
+        pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."NumDoc") "o_celonis_SalesOrder"."CustomerPurchaseOrder"
+        filters:
+        - pql: FILTER ABS((COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) - COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))) > 1 AND NOT(COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0);
+          isReferenced: false
+        attributes:
+        - id: 95af9300-bf75-4adc-a911-aacffecea2f7
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."NumDoc")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: NumDoc
+          shortDisplayName: ''
+        - id: 28f7c121-4a85-477c-ac02-5f67b99923db
+          pql: '"o_celonis_SalesOrder"."CustomerPurchaseOrder"'
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Ordem de Venda
+          shortDisplayName: ''
+        - id: 2fa034dd-6438-4255-a91c-fb5aef078fd5
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Metra
+          shortDisplayName: ''
+        - id: 2516eca2-9019-4d6e-ba18-96d3f52862be
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: SAP
+          shortDisplayName: ''
+        - id: bcfe2867-eb1a-4e97-8254-e74ec7568a74
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0)) - SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", CASE WHEN "o_celonis_CustomerInvoice"."custom_FaturaEstornada" = 'X' THEN 0 ELSE "o_celonis_CustomerInvoiceItem"."NetAmount" END), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Delta
+          shortDisplayName: ''
+        displayName: e5367292-4b29-4a97-9632-4a55805d89c6
+        shortDisplayName: ''
+- id: 999d258f-9022-4f58-92a5-ad037bdf1b53
+  grid:
+    mode: full-height
+    elements:
+    - id: 9457cf85-4b2a-4832-81e4-a267f204d75e
+      position:
+        width: 36
+        height: 4
+        positionX: 1
+        positionY: 1
+      componentId: text-box-bf0f5591-c56f-438d-ace7-08251884df20
+    - id: 246c64b3-55b4-492e-a03e-c9184ad1bee9
+      position:
+        width: 36
+        height: 6
+        positionX: 1
+        positionY: 5
+      componentId: kpi-list-5b2efcc0-3dda-4ec8-91e5-b9122cb6b78f
+    - id: ade25a4d-a60b-4f0e-ab4f-806f3c74a956
+      position:
+        width: 18
+        height: 24
+        positionX: 1
+        positionY: 11
+      componentId: columns-line-chart-cac6b238-c76c-47e4-b9e3-54b43428dd43
+    - id: 6d27db25-d3f3-451d-969b-b865c239837e
+      position:
+        width: 18
+        height: 24
+        positionX: 19
+        positionY: 11
+      componentId: columns-line-chart-7a59de34-d605-480e-bce8-9d9f82df5486
+    - id: e91c1c2e-8138-431a-a44a-31131720acfd
+      position:
+        width: 36
+        height: 36
+        positionX: 1
+        positionY: 35
+      componentId: table-a4918f0e-9d73-4430-befc-d841b689d75b
+  name: Leakage (Sem Match SAP)
+  asides:
+  - active: true
+    asideId: 6ae8cd44-8841-4ddd-b267-67b28ff47175
+  visible: true
+  components:
+  - id: text-box-bf0f5591-c56f-438d-ace7-08251884df20
+    type: text-box
+    filters: []
+    settings:
+      content: '<h2><strong>Leakage — Faturado no Metranet, sem Match no SAP</strong></h2><p>Prioridade de caça: valor que saiu do Metranet e não encontrou fatura correspondente.</p>'
+  - id: kpi-list-5b2efcc0-3dda-4ec8-91e5-b9122cb6b78f
+    type: kpi-list
+    filters: []
+    settings:
+      data:
+        kpis:
+        - id: 7a4bba7f-12fd-4649-ba20-8b4870ff4f6f
+          kpi: c29c6b4a-1b3f-44b0-960b-877f9eadfdf8.2d72cbd8-9fa4-4e94-8b74-a269e4169a84
+          show: true
+          order: 100
+        - id: 2b112600-0aca-40b5-91e9-f4e3227ebbb3
+          kpi: 97272843-0c90-47c0-9c04-979e80272308.52c8b014-2105-4545-ac24-257d5adb0b44
+          show: true
+          order: 200
+        - id: 3fb2877d-def9-4c64-9f2e-063f9fe05465
+          kpi: 0e8e8a64-8c7f-4ee9-bc82-c19ace5b51d9.eded5337-b0eb-4b05-88c8-f31fc9617654
+          show: true
+          order: 300
+        - id: c5d94b03-e6f3-4617-84b2-179c9370e7f2
+          kpi: f85bd491-2794-4782-98da-8080ef601483.429343e3-2616-46c3-b1b1-2300e0a30011
+          show: true
+          order: 400
+      dataSources:
+      - id: c29c6b4a-1b3f-44b0-960b-877f9eadfdf8
+        filters: []
+        attributes:
+        - id: 2d72cbd8-9fa4-4e94-8b74-a269e4169a84
+          pql: SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)
+          unit: ''
+          format: ',.3~s'
+          columnType: float
+          aggregation: true
+          displayName: Valor Total sem Match
+          shortDisplayName: ''
+        displayName: c29c6b4a-1b3f-44b0-960b-877f9eadfdf8
+        shortDisplayName: ''
+      - id: 97272843-0c90-47c0-9c04-979e80272308
+        filters: []
+        attributes:
+        - id: 52c8b014-2105-4545-ac24-257d5adb0b44
+          pql: SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN 1 ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Ordens sem Match
+          shortDisplayName: ''
+        displayName: 97272843-0c90-47c0-9c04-979e80272308
+        shortDisplayName: ''
+      - id: 0e8e8a64-8c7f-4ee9-bc82-c19ace5b51d9
+        filters: []
+        attributes:
+        - id: eded5337-b0eb-4b05-88c8-f31fc9617654
+          pql: COUNT(DISTINCT CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CodPagador") END)
+          unit: ''
+          format: ',.0f'
+          columnType: int
+          aggregation: true
+          displayName: Clientes Afetados
+          shortDisplayName: ''
+        displayName: 0e8e8a64-8c7f-4ee9-bc82-c19ace5b51d9
+        shortDisplayName: ''
+      - id: f85bd491-2794-4782-98da-8080ef601483
+        filters: []
+        attributes:
+        - id: 429343e3-2616-46c3-b1b1-2300e0a30011
+          pql: (SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)) / CASE WHEN (SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))) = 0 THEN NULL ELSE (SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))) END
+          unit: ''
+          format: .1%
+          columnType: float
+          aggregation: true
+          displayName: '% do Faturamento Metra'
+          shortDisplayName: ''
+        displayName: f85bd491-2794-4782-98da-8080ef601483
+        shortDisplayName: ''
+  - id: columns-line-chart-cac6b238-c76c-47e4-b9e3-54b43428dd43
+    type: columns-line-chart
+    filters: []
+    settings:
+      name: Leakage por Competência
+      visuals:
+      - id: 15129ad4-7790-494f-98a0-dbebdb027c7e
+        mark:
+          type: bar
+          orientation: vertical
+        order: 100
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - 812dc56a-b30a-45bc-a53d-421df1fa371c
+          y:
+            axis:
+              hide: false
+              position: left
+            field: 3fe1b772-4ea5-48b4-87da-6503d8aac7fa
+      - id: 16424568-78c1-46bd-9ad6-fdba0158f3a7
+        mark:
+          type: line
+          orientation: vertical
+        order: 200
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - 812dc56a-b30a-45bc-a53d-421df1fa371c
+          y:
+            axis:
+              hide: false
+              position: right
+            field: 91d4ee06-497d-4411-97a1-241b3d9a2344
+      dataSources:
+      - id: 6b362ded-11e7-4b90-a5e5-85e25ee27466
+        filters: []
+        attributes:
+        - id: 812dc56a-b30a-45bc-a53d-421df1fa371c
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."Competencia")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Competência
+          shortDisplayName: ''
+        - id: 3fe1b772-4ea5-48b4-87da-6503d8aac7fa
+          pql: SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Valor sem match
+          shortDisplayName: ''
+        - id: 91d4ee06-497d-4411-97a1-241b3d9a2344
+          pql: SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN 1 ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Qtd itens
+          shortDisplayName: ''
+        displayName: 6b362ded-11e7-4b90-a5e5-85e25ee27466
+        shortDisplayName: ''
+  - id: columns-line-chart-7a59de34-d605-480e-bce8-9d9f82df5486
+    type: columns-line-chart
+    filters: []
+    settings:
+      name: Leakage por Cliente
+      visuals:
+      - id: 79267b3a-3040-48d6-b41c-56fed7226716
+        mark:
+          type: bar
+          orientation: vertical
+        order: 100
+        encodings:
+          x:
+            axis:
+              hide: false
+              position: left
+            field:
+            - 9a15975c-729e-447c-b551-1690ba3ae8c6
+          y:
+            axis:
+              hide: false
+              position: left
+            field: cfdf7e78-8434-4822-9d00-d130a3ec983c
+      dataSources:
+      - id: 40fe7d9a-1f26-4b7c-bbb8-8ef7b4277d52
+        filters: []
+        attributes:
+        - id: 9a15975c-729e-447c-b551-1690ba3ae8c6
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CodPagador")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: CodPagador
+          shortDisplayName: ''
+        - id: cfdf7e78-8434-4822-9d00-d130a3ec983c
+          pql: SUM(CASE WHEN COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0 THEN COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0) ELSE 0 END)
+          unit: ''
+          format: ',.0f'
+          columnType: float
+          aggregation: true
+          displayName: Valor sem match
+          shortDisplayName: ''
+        displayName: 40fe7d9a-1f26-4b7c-bbb8-8ef7b4277d52
+        shortDisplayName: ''
+  - id: table-a4918f0e-9d73-4430-befc-d841b689d75b
+    type: table
+    filters: []
+    settings:
+      data:
+        columns:
+        - id: e9add4b8-d432-42ee-9e4a-b78bd9833111
+          field: 25a21a9e-d043-4b9d-846b-28e7d5c4b77a
+          order: 100
+        - id: b059dc30-e858-487d-ab7f-16e44368ff3d
+          field: 1959a160-1957-4610-96b6-f9c3e074af65
+          order: 200
+        - id: 00bdae70-539e-4f20-9cee-ac7ac06c053c
+          field: 00fa9ea0-8449-406a-9477-c8465f76901a
+          order: 300
+        - id: 19d10c4a-5fc9-4b4b-8f05-36c527aa753a
+          field: 92cc5b7e-ea10-45d9-97e8-fcef7e46439e
+          order: 400
+        - id: 3119d002-b4a2-4c3f-ac1b-a977cd7048b4
+          field: 98350153-7d8e-4a18-8762-287b1d896530
+          order: 500
+        - id: 9242db77-f75b-41e2-9151-10e3246c9a89
+          field: f0c8263d-9548-45eb-a894-9b24cd049c5e
+          order: 600
+      dataSources:
+      - id: 555aee3b-c8c5-4069-9b96-466f35837d34
+        pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."NumDoc") PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CodPagador") PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."NomeCompleto") PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."PRODUTO") PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."Competencia")
+        filters:
+        - pql: FILTER COALESCE(PU_COUNT("o_celonis_SalesOrder", "o_celonis_CustomerInvoiceItem"."ID"), 0) = 0;
+          isReferenced: false
+        attributes:
+        - id: 25a21a9e-d043-4b9d-846b-28e7d5c4b77a
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."NumDoc")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: NumDoc
+          shortDisplayName: ''
+        - id: 1959a160-1957-4610-96b6-f9c3e074af65
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."CodPagador")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: CodPagador
+          shortDisplayName: ''
+        - id: 00fa9ea0-8449-406a-9477-c8465f76901a
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."NomeCompleto")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Cliente
+          shortDisplayName: ''
+        - id: 92cc5b7e-ea10-45d9-97e8-fcef7e46439e
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."PRODUTO")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Produto
+          shortDisplayName: ''
+        - id: 98350153-7d8e-4a18-8762-287b1d896530
+          pql: PU_FIRST("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."Competencia")
+          unit: ''
+          format: ''
+          columnType: string
+          aggregation: false
+          displayName: Competência
+          shortDisplayName: ''
+        - id: f0c8263d-9548-45eb-a894-9b24cd049c5e
+          pql: SUM(COALESCE(PU_SUM("o_celonis_SalesOrder", "o_custom_DetalhamentoFaturasMetra"."ValorFinal"), 0))
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          displayName: Valor Metranet
+          shortDisplayName: ''
+        displayName: 555aee3b-c8c5-4069-9b96-466f35837d34
+        shortDisplayName: ''
+filters:
+- id: sem_estorno
+  visible: true
+  editable: true
+- id: ordem_de_venda_cs
+  visible: true
+  editable: true
