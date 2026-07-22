@@ -1,0 +1,102 @@
+asides: []
+metadata:
+  key: grafico-metrica-dinamica-lag
+  name: Gráfico — Métrica dinâmica + Variação M/M (2026)
+  liveView:
+    enabled: true
+    autoReload: false
+  knowledgeModelKey: dm_test_perspective_custom_atendeperspective-km
+  allowAdvancedFilters: true
+tabs:
+- id: 83363eba-33c8-43e0-872b-ebdb25fc221a
+  grid:
+    mode: scrollable
+    height: 20
+    elements:
+    - id: da93ea3c-f767-40e8-8487-a424df8b145a
+      position:
+        width: 36
+        height: 18
+        positionX: 1
+        positionY: 1
+      componentId: columns-line-chart-0ac894b9-a9b8-41ec-9ad5-6af655618771
+  name: Gráfico Dinâmico
+  visible: true
+  components:
+  - id: columns-line-chart-0ac894b9-a9b8-41ec-9ad5-6af655618771
+    type: columns-line-chart
+    filters: []
+    settings:
+      visuals:
+      - id: 05f33e40-566c-4040-ad85-cd1567de7285
+        mark:
+          type: bar
+        order: 100
+        encodings:
+          x:
+            field:
+            - b777fc56-6dd9-4777-8378-4b54d8d1ee54
+          y:
+            axis:
+              hide: false
+              position: left
+            stack:
+            - kpi: 44c6afd6-27cb-44bb-a647-7e9c516055ba
+              color: CUSTOM2_10
+            detail: []
+      - id: 71c66087-0cbd-4107-bdf3-e0d35f3b7c60
+        mark:
+          type: line
+          color: CUSTOM1_50
+          point: true
+          orientation: vertical
+        order: 200
+        encodings:
+          x:
+            field:
+            - b777fc56-6dd9-4777-8378-4b54d8d1ee54
+          y:
+            axis:
+              hide: false
+              position: right
+            field: 98e018e2-6f77-42a3-a526-063321a7727c
+            detail: []
+      dataSources:
+      - id: 7798ab99-c9da-424f-a768-729b41e1e3a0
+        filters:
+        - pql: FILTER ROUND_MONTH("o_custom_Acionamento"."OpenedAt") >= {d'2026-01-01'} AND ROUND_MONTH("o_custom_Acionamento"."OpenedAt") <= {d'2026-06-01'}
+          isReferenced: false
+        attributes:
+        - id: b777fc56-6dd9-4777-8378-4b54d8d1ee54
+          pql: ROUND_MONTH("o_custom_Acionamento"."OpenedAt")
+          unit: ''
+          format: '%Y-%m'
+          columnType: date
+          aggregation: false
+          description: ''
+          displayName: Mês
+          shortDisplayName: ''
+        - id: 44c6afd6-27cb-44bb-a647-7e9c516055ba
+          pql: ${metrica}
+          unit: ''
+          format: ',.2f'
+          columnType: float
+          aggregation: true
+          description: ''
+          displayName: Métrica
+          shortDisplayName: ''
+        - id: 98e018e2-6f77-42a3-a526-063321a7727c
+          pql: CASE WHEN LAG( ${metrica} , ORDER BY ( ROUND_MONTH("o_custom_Acionamento"."OpenedAt") ) ) = 0 OR LAG( ${metrica} , ORDER BY ( ROUND_MONTH("o_custom_Acionamento"."OpenedAt") ) ) IS NULL THEN NULL ELSE ( ${metrica} - LAG( ${metrica} , ORDER BY ( ROUND_MONTH("o_custom_Acionamento"."OpenedAt") ) ) ) / LAG( ${metrica} , ORDER BY ( ROUND_MONTH("o_custom_Acionamento"."OpenedAt") ) ) END
+          unit: ''
+          format: ',.0%'
+          columnType: float
+          aggregation: true
+          description: ''
+          displayName: Variação M/M
+          shortDisplayName: ''
+        description: ''
+        displayName: 7798ab99-c9da-424f-a768-729b41e1e3a0
+        shortDisplayName: ''
+      interactions:
+        scrolling: false
+filters: []
